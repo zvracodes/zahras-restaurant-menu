@@ -1,0 +1,217 @@
+:root {
+    --primary: maroon;
+    --muted: rgb(119, 119, 95);
+    --bg: rgb(248, 248, 233);
+    --border-color: #d1d5db;
+    --capsule-text: #6b7280;
+    --text: black;
+    --item-border: black;
+    --heading-color: black;
+}
+
+input[name="theme"] {
+    display: none;
+}
+
+body:has(#theme-raat:checked) {
+    --primary: #e8632c;
+    --muted: #c9a284;
+    --bg: #17110d;
+    --border-color: #4a2f22;
+    --capsule-text: #e8b89a;
+    --text: #f6e9db;
+    --item-border: #4a2f22;
+    --heading-color: rgb(228, 228, 73);
+
+}
+body:has(#theme-iftar:checked) {
+  --primary:#d4a548;
+  --muted:  #a9c9c3;
+  --bg:#0c2321;
+  --border-color: #2a4a45;
+  --capsule-text: #d4a548; 
+  --text: #f3ede0; 
+  --item-border: #2a4a45; 
+  --heading-color: rgb(105, 209, 178);
+  
+}
+
+body:has(#theme-din:checked){
+    --primary: maroon;
+  --muted: rgb(119, 119, 95);
+  --bg: rgb(248, 248, 233);
+  --border-color: #d1d5db;
+  --capsule-text:  #6b7280;
+  --text: black;
+  --item-border: black;
+  --heading-color: #d4a548;
+}
+body:has(#theme-chai:checked) {
+  --primary: #a05c3b;
+  --muted: #93765f;
+  --bg:   #f2e4d8;;;
+  --border-color: #d9c4b0;
+  --capsule-text: #a05c3b;
+  --text: #4a3728;
+  --item-border: #d9c4b0;
+  --heading-color: rgb(33, 84, 69);
+}
+.website {
+    background-color: var(--bg);
+
+}
+
+.nav {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    .location {
+        text-align: center;
+        font-size: small;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--muted);
+    }
+
+    .heading {
+        text-align: center;
+        color: var(--primary);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .heading3 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--muted);
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    .capsules {
+        display: flex;
+
+
+    }
+
+    .capsules1 {
+        border: 1px solid var(--border-color);
+        color: var(--capsule-text);
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 9px;
+    }
+
+    .capsules2 {
+        border: 1px solid var(--border-color);
+        color: var(--capsule-text);
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 9px;
+
+    }
+
+    .capsules3 {
+        border: 1px solid var(--border-color);
+        color: var(--capsule-text);
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 9px;
+    }
+
+    .capsules4 {
+        border: 1px solid var(--border-color);
+        color: var(--capsule-text);
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 9px;
+    }
+}
+
+.nav2 {
+    text-align: left;
+
+
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 45px;
+        color: var(--heading-color);
+    }
+
+    .line {
+        border: none;
+        height: 3px;
+        background: var(--primary);
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .todaymenu {
+        margin-bottom: 40px;
+    }
+
+    .item {
+        width: 90%;
+        margin: 20px auto;
+        padding: 24px 30px;
+        gap: 10px;
+        border: 1px solid var(--item-border);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+         transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border-radius: 15px;
+    }
+.item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Chicken {
+        margin: 0;
+        padding: 0;
+        font-size: 1.15rem;
+        color: var(--text);
+    }
+
+    .rate {
+        margin: 0;
+        color: var(--primary);
+        font-size: 1.15rem;
+    }
+
+    .explain {
+       
+        padding: 0;
+
+    }
+
+    .explain h2 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: normal;    
+    line-height: 1.5;
+    color: var(--muted);
+        
+    }
+
+
+}
